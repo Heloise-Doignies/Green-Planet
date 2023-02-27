@@ -1,1 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+
+body {
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+
+/* Code pour le titre principal Contact */
+#contact_titre1 {
+    font-family: "Anton", Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding:auto;
+}
+
+/* Code pour organiser les blocs */
+
+#contact_blocgeneral {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+.contact_titre2 {
+    font-family: "Tilt Neon", Arial;
+    text-align: center;
+    align-items: center;   
+}
+
+#contact_gauche, #contact_droite {
+    width:auto;
+}
+
+/* Code pour le bloc "Green Planet" avec les informations générales */
+#contact_carte {
+    background-color: #79C2BE;
+    margin-right:10px;
+    padding:5px;
+}
+
+#contact_informations {
+    list-style-type: none;
+}
+
+.contact_list {
+    font-family: "Montserrat", Arial;
+    align-items: center;
+}
+
+.contact_icones {
+    width:20px;
+    height: auto;
+    padding-right:5px;
+}
+
+/* Code pour le bloc "Nos secteurs d'intervention" */
+#contact_secteurs {
+    background-color: none;
+    margin-right: 10px;
+    padding:5px;
+}
+
+.contact_loc {
+    height:25px;
+    width:auto;
+}
+
+#contact_texteintervention {
+    font-family: "Montserrat", Arial;
+    text-align: center;
+}
+
+/* Code pour le bloc formulaire "Nous contacter" */
+.contact_titre3 {
+    font-family: "Tilt Neon", Arial;
+    text-align: center;
+    align-items: center;  
+    color:white; 
+}
+
+#contact_formulaire {
+    background-color: #2362B0;
+    margin-left:10px;
+    padding:5px;
+}
+
+#contact_survey-form {
+    font-family: "Montserrat";
+    color:white;
+
+}
+
+.contact_case { /*CA NE MARCHE PAS POUR LA CASE VOTRE MESSAGE*/
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+
+#contact_name, #contact_email {
+    width: 500px;
+    height: 40px;
+    border:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+#contact_comments {
+    width: 500px;
+    border:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+#input::placeholder { /*CA NE MARCHE PAS POUR METTRE LE TEXTE EN BLEU CLAIR*/
+    color:#79C2BE;
+}
+
+
+/* Code pour le bloc formulaire : bouton envoi */
+
+#contact_submit {
+    background-color: #FFCA08;
+    border-radius: 50%;
+    border:none;
+    width: 45px;
+    height: 45px;
+}
+
+#contact_envoi {
+    height:25px;
+    width: auto;
+}
