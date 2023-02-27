@@ -1,3 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+
+body{
+    background-color: ;
+    
+}
+#qui-sommes-nous_soustitre1 {
+    align-items: center;
+    background-color: #2362b0;
+    color: aliceblue;
+    font-family:"Montserrat";
+
+
+}
+.quisommesnous_texte_green_plante{
+    color: #181818;
+    font-family:"Montserrat";
+
+}
+.quisommesnous_bouton{
+    background-color:#FFCA08 ;
+    color: black;
+    font-family:"Montserrat";
+    border-radius: 20px;
+
+}
+
+#qui-sommes-nous_blocgeneral{
+    display: flex;
+    
+
+
+}
 
 
