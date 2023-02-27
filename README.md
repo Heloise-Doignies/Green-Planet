@@ -14,7 +14,7 @@ Icones dans le texte en HTML via awesome font
 Organisation du contenu entre header / section(s) / footer
 
 Couleurs :
-- darkblue : #2362B0
+- darkblue : #2362b0
 - lightblue : #79C2BE
 - yellow : #FFCA08
 - black : #181818
