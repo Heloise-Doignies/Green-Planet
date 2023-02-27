@@ -11,19 +11,67 @@
 
     <body>
         <header>
-            <img id="logo" src="images-general/logo-green-planet.png" alt="logo"><div id="green-peace">Green Peace</div>
-            <nav>
-                <ul>
-                    <li><a title="Accueil" href="accueil.html">Accueil</a></li>
-                    <li><a title="Nos services" href="nos-services.html">Nos services</a></li>
-                    <li><a title="Qui sommes-nous" href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                    <li><a title="Contact" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </header>
 
 <!--Ici le contenu du site web-->
+        <section id="contact">
 
+            <h1 id="contact_titre1">Contact</h1>
+
+            <div id="contact_blocgeneral"> <!--Bloc général pour flexbox-->
+
+                <div id="contact_gauche"><!--Blocs à gauche-->
+
+                    <!--Carte d'informations générales-->
+                    <div id="contact_carte">
+                        <h2 class="contact_titre2">Green Planet</h2>
+                        <ul id="contact_informations">
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/pin.png" alt="icone localisation">15 rue Henri Chevreau, 75020 Paris</li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/phone-call.png" alt="icone numero">06 01 02 03 04</li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/mail.png" alt="icone mail">contact@greenplanet.com</li>
+                            <li class="contact_list"><img class="contact_icones" src="images-contact/clock.png" alt="icone disponibilite">Du lundi au vendredi, 9h à 18h</li>
+                        </ul>
+                    </div>
+
+                    <!--Nos secteurs d'intervention-->
+                    <div id="contact_secteurs">
+                        <h2 class="contact_titre2"><img class="contact_loc" src="images-contact/pin.png" alt="icone localisation">Nos secteurs d'intervention</h2>
+                        <div id="contact_texteintervention">Nous intervenons partout en France métropolitaine</div>
+                    </div>
+
+                </div><!--Fermeture blocs à gauche-->
+
+                <div id="contact_droite"><!--Bloc à droite-->
+
+                    <!--Formulaire de contact-->
+                    <div id="contact_formulaire">
+                        <h2 class="contact_titre3">Nous contacter</h2>
+
+                        <form id="contact_survey-form">
+                            <div class="contact_case">
+                                <label for="contact_name" id="contact_name-label">Prénom Nom</label> <input type="text" id="contact_name" placeholder="Malik Dupont" required/>
+                            </div>
+                        
+                            <div class="contact_case">
+                                <label for="contact_email" id="contact_email-label">Votre adresse mail</label> <input type="email" id="contact_email" placeholder="malik.dupont@monmail.com" required/>
+                            </div>
+
+                            <div class="contact_case">
+                                <label for="contact_comments">Votre message
+                                <textarea id="contact_comments" name="comments" rows="5" cols="40" placeholder="Mon message"></textarea>
+                                </label>
+                            </div>
+
+                            <div class="contact_end">
+                                <button type="submit" id="contact_submit"><img id="contact_envoi" src="images-contact/send.png" alt="envoi formulaire"></button>
+                            </div>    
+                        </form>
+                    </div>
+
+                </div> <!--Fermeture bloc à droite-->
+
+            </div> <!--Fermeture bloc général-->   
+        </section>
 
 
         <footer></footer><!--Ne pas modifier cette ligne-->
