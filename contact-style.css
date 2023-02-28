@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
 
 /* Code pour le header - Code pour le header - Code pour le header*/
 header{
@@ -21,7 +21,7 @@ header{
 }
  
 #header_green-planet {
-    font-family: "Anton";
+    font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     font-weight: bold;
     color:#2362B0;
@@ -69,7 +69,7 @@ body {
 
 /* Code pour le titre principal Contact */
 #contact_titre1 {
-    font-family: "Anton", Arial;
+    font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     text-align: center;
     padding:auto;
