@@ -30,8 +30,14 @@ body {
     align-items: center;   
 }
 
-#contact_gauche, #contact_droite {
+#contact_gauche {
+    float:left;
+    width:50%;
+}
+
+#contact_droite {
     width:auto;
+    width: 50%;
 }
 
 /* Code pour le bloc "Green Planet" avec les informations générales */
@@ -48,6 +54,7 @@ body {
 .contact_list {
     font-family: "Montserrat", Arial;
     align-items: center;
+    padding:8px;
 }
 
 .contact_icones {
@@ -60,11 +67,12 @@ body {
 #contact_secteurs {
     background-color: none;
     margin-right: 10px;
-    padding:5px;
+    padding:8px;
+    text-align:center;
 }
 
 .contact_loc {
-    height:25px;
+    height:30px;
     width:auto;
 }
 
@@ -93,15 +101,14 @@ body {
 
 }
 
-.contact_case { /*CA NE MARCHE PAS POUR LA CASE VOTRE MESSAGE*/
+.contact_case { /*Ca ne marche pas pour la case "votre message" */
     display:flex;
     flex-direction: column;
     margin:10px;
 }
 
-
 #contact_name, #contact_email {
-    width: 500px;
+    width: auto;
     height: 40px;
     border:none;
     border-radius:30px;
@@ -109,14 +116,16 @@ body {
 }
 
 #contact_comments {
-    width: 500px;
+    width: auto;
     border:none;
     border-radius:30px;
     margin:10px;
 }
 
-#input::placeholder { /*CA NE MARCHE PAS POUR METTRE LE TEXTE EN BLEU CLAIR*/
+::placeholder {
     color:#79C2BE;
+    padding:10px;
+    font-family: "Montserrat";
 }
 
 
