@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
 
 body {
     width: auto;
@@ -21,20 +21,20 @@ header{
 }
  
 #green-peace {
-    font-family: "Anton";
+    font-family: Fredoka one;
     text-transform: uppercase;
     font-weight: bold;
     color:#2362B0;
 }
 /* police de caractère de tous les textes */
 
-h1, h2{
-    font-family: Anton;
+h1{
+    font-family: Fredoka one;
     font-size: 3em;
 }
 
 h2{
-    font-family: Anton;
+    font-family: Fredoka one;
     font-size: 2em;
 }
 
@@ -82,7 +82,8 @@ button{
     width: 280px;
     height: 380px;
     padding: 10px;
-}
+    transition: all 500ms ease; 
+} 
 
 #accueil-img-agenda {
     height: 150px;
@@ -99,7 +100,8 @@ button{
     color: white;
     padding: 10px;
     margin-bottom: 25px;
-}
+    transition: all 500ms ease;
+} 
 
 .accueil-intervention{
     font-size: 1.5em;
@@ -109,6 +111,14 @@ button{
     height: 50px;
     width: 170px;
     font-size: 1.2em;
+}
+
+.accueil-boutton-nos-services:hover{
+    height: 50px;
+    width: 170px;
+    font-size: 1.2em;
+    background-color: white;
+    color: #2362B0;
 }
 
 #accueil-img-graine {
@@ -124,6 +134,7 @@ button{
     height: 380px;
     padding: 5px;
     align-items: flex-start;
+    transition: all 500ms ease; 
 }
 
 
@@ -202,7 +213,7 @@ button{
 
 #email{background-color: antiquewhite;
     height: 35px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     font-style: italic;
 }
@@ -219,6 +230,34 @@ input{
     width: 175px;
     font-weight: bold;
 }
+
+/* PARTIE HOVER */
+/* pour les 3 blocs agenda, services, blog + bouton newsletter */
+.accueil-blog:hover, .zoom:hover, .accueil-services:hover, .accueil-agenda:hover{
+    transform: scale(1.1);
+transition: all 500ms ease;
+}
+
+/* PARTIE HOVER */
+/* Boutons cliquables */
+button:hover{
+    background-color: #2362B0;
+    border-color: #2362B0;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+}
+
+.zoom:hover{
+    background-color: #2362B0;
+    border-color: #2362B0;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 165px;
+}
+
 
 
 /* PARTIE RESPONSIVE */
