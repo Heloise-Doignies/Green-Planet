@@ -17,10 +17,10 @@
 
 <div class="accueil-titre">
     <h1>L'ÉCOLOGIE, UN JEU D'ENFANT !</h1>
-    <p>Sensibiliser et accompagner les établissements scolaires vers une démarche écologique</p>
+    <p class="accueil-sensibiliser">Sensibiliser et accompagner les établissements scolaires vers une démarche écologique</p>
 </div>
 
-<!--3 blocs alignés avec des bouttons cliquables-->
+<!--3 blocs alignés avec des boutons cliquables-->
 
 <section class="accueil-bloc">
 <div  class="accueil-agenda">
@@ -31,10 +31,10 @@
 </div>
 
 <div class="accueil-services">
-    <h3>Interventions dans les établissements scolaires</h3>
+    <h3 class="accueil-intervention">Interventions dans les établissements scolaires</h3>
     <img id="accueil-img-graine" src="/images-accueil/enfant graine.png" alt="enfants qui font pousser une plante">
     <p>Pour les petites graines qui vont semer l'avenir</p>
-    <button>Nos services</button>
+    <button class="accueil-boutton-nos-services">Nos services</button>
 </div>
 
 <div class="accueil-blog">
@@ -45,6 +45,8 @@
     <button>Voir plus</button>
 </div>
 </section>
+
+<!--Les missions de green planet, fond blanc-->
 
 <h2>LES MISSIONS DE GREEN PLANET</h2>
 <div class="accueil-greenplanet">
@@ -59,7 +61,7 @@
     <img id="accueil-img-missions" src="/images-accueil/mission green planet.png" alt="enfants qui recyclent">
 </div>
 
-<!--Bandeau avec 3 blocs texte/image sur fond jaune-->
+<!--Bandeau derniers ateliers avec 3 blocs texte/image sur fond jaune-->
 
 <div class="accueil-fondjaune">
 
@@ -67,23 +69,33 @@
 
     <section class="accueil-ateliers">
     <div class="accueil-ecole">
-        <p>A la découverte de la flore locale</p>
-        <p>Ecole Dorléac</p>
+        <p>A la découverte de la flore locale<br>Ecole Dorléac</p>
             <img class="photo" src="/images-accueil/flore.JPG" alt="enfants qui découvrent la flore">
     </div>
     
     <div class="accueil-college">
-        <p>Clean walk au parc de Vincennes</p>
-            <p>Collège Clémenceau</p>
+        <p>Clean walk au parc de Vincennes<br>Collège Clémenceau</p>
             <img class="photo" src="/images-accueil/clean walk.JPG" alt="collegiens qui nettoyent la nature">
     </div>
     <div class="accueil-lycee">
-        <p>Atelier recyclerie</p>
-        <p>Lycée Jules Ferry </p>
+        <p>Atelier recyclerie<br>Lycée Jules Ferry </p>
         <img class="photo" src="/images-accueil/recyclerie.JPG" alt="lycéens qui font un atelier diy">
     </div>
 </section>
 </div>
+
+<!--Formulaire de Newletter-->
+
+<section class="accueil-newsletter">
+    <div class="accueil-infonewsletter">
+        <img class="accueil-imgnewsletter" src="/images-accueil/latest-news.png" alt="megaphone qui crie Latest Newsletter">
+        <div class="accueil-contact"><p>Restons en contact ! <br>Recevez nos actualités</p></div>
+    </div>
+        <form class="accueil-form">
+            <label for="email"><input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail"/></label>
+            <input type="submit" value="S'inscrire à la Newletter"/>
+        </form>
+</section>
 
 
         <footer><!--Ne pas modifier ce bloc--></footer>
