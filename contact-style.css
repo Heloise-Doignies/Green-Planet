@@ -172,7 +172,6 @@ body {
     margin:10px;
 }
 
-
 #contact_name-label, #contact_email-label, #contact_comments-label {
     padding-left:30px;
 }
@@ -191,6 +190,7 @@ body {
     border-radius:30px;
     margin:10px;
 }
+
 
 #contact_survey-form ::placeholder {
     color:#79C2BE;
