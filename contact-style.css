@@ -1,4 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+/* Code pour le header - Code pour le header - Code pour le header*/
+header{
+    background-color: #FFCA08;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    max-width: 1440px;
+}
+
+#header_logo {
+    width:80px;
+    height: auto;
+    margin:20px;
+}
+ 
+#header_green-planet {
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#2362B0;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+}
+
+#header_ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:20px;
+}
+
+.header_li {
+    padding:10px;
+    align-content: end;
+    font-family: "Montserrat";
+    color:#2362B0;
+}
+
+header a {
+    text-decoration: none;
+    color: #2362B0;
+}
+
+.header_li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header_burger, #header_toggle {
+    display:none;
+}
+
+/* Fin code pour le header - Fin code pour le header - Fin code pour le header */
 
 body {
     width: auto;
@@ -9,9 +69,8 @@ body {
 
 /* Code pour le titre principal Contact */
 #contact_titre1 {
-    font-family: "Anton", Arial;
+    font-family: "Fredoka One", cursive;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center;
     padding:auto;
 }
@@ -26,7 +85,8 @@ body {
 
 .contact_titre2 {
     font-family: "Tilt Neon", Arial;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;   
 }
 
@@ -36,7 +96,6 @@ body {
 }
 
 #contact_droite {
-    width:auto;
     width: 50%;
 }
 
@@ -55,7 +114,14 @@ body {
     font-family: "Montserrat", Arial;
     align-items: center;
     padding:8px;
+    display: flex;
+    align-items: center;
 }
+
+.contact_list a {
+    color:black;
+}
+
 
 .contact_icones {
     width:20px;
@@ -72,7 +138,7 @@ body {
 }
 
 .contact_loc {
-    height:30px;
+    height:40px;
     width:auto;
 }
 
@@ -98,13 +164,16 @@ body {
 #contact_survey-form {
     font-family: "Montserrat";
     color:white;
-
 }
 
-.contact_case { /*Ca ne marche pas pour la case "votre message" */
+.contact_case { 
     display:flex;
     flex-direction: column;
     margin:10px;
+}
+
+#contact_name-label, #contact_email-label, #contact_comments-label {
+    padding-left:30px;
 }
 
 #contact_name, #contact_email {
@@ -122,7 +191,8 @@ body {
     margin:10px;
 }
 
-::placeholder {
+
+#contact_survey-form ::placeholder {
     color:#79C2BE;
     padding:10px;
     font-family: "Montserrat";
@@ -131,15 +201,161 @@ body {
 
 /* Code pour le bloc formulaire : bouton envoi */
 
+.contact_end {
+    display:flex;
+    justify-content: flex-end;
+}
+
 #contact_submit {
     background-color: #FFCA08;
     border-radius: 50%;
-    border:none;
-    width: 45px;
-    height: 45px;
+    border-style:none;
+    width: 50px;
+    height: 50px;
+    margin:10px;
 }
 
-#contact_envoi {
-    height:25px;
-    width: auto;
+#contact_icon-envoi {
+    color:white;  
+    font-size: 1.7rem;
+}
+
+#contact_submit:hover {
+    background-color: #79C2BE;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* Code pour le footer - Code pour le footer - Code pour le footer - */
+
+#footer_blocblanc {
+    background-color: white;
+    height: 80px;
+}
+
+footer {
+    background-color: #2362B0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed; /*pour coller le footer en bas */
+    bottom: 0; left: 0; right: 0;
+    width:100%;
+    height:auto;
+}
+
+#footer_gauche{
+    color:white;
+    font-family: "Montserrat";
+    padding-left:20px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#79C2BE;
+ }
+
+ .fa-brands {
+    width: 30px;
+    height:auto;
+    color:white;
+    padding-right:20px;
+ }
+
+ .fa-brands:hover {
+    color:#79C2BE;
+    cursor: pointer;
+ }
+
+/* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
+
+
+
+
+@media (max-width: 375px) {
+    /*Code media queries pour le header*/
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav #header_ul
+    {
+        display: none;
+        flex-direction: column;
+        background-color: #FFCA08;
+        height: 180px;
+        position: relative;
+    }
+ 
+    nav #header_ul a {
+        width: 50%;
+    }
+ 
+    #header_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+        color:#2362B0;
+        cursor: pointer;
+    }
+
+    #header_toggle:checked + #header_ul {
+        display: flex;
+    }
+
+    #header_logo {
+        width:50px;
+        margin:10px;
+    }
+     
+    #header_green-planet {
+        margin-left:10px;
+    }
+
+    /*Fin code media queries pour le header*/
+
+    /*Code media queries pour le contenu de contact*/
+    #contact_blocgeneral {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    #contact_gauche {
+        width:100%;
+    }
+    
+    #contact_droite {
+        width: 100%;
+    }
+
+    #contact_carte {
+        margin-right:0;
+    }
+
+    #contact_secteurs {
+        margin-right: 0;
+    }
+
+    #contact_formulaire {
+        margin-left:0;
+    }
+
+    /*Fin code media queries pour le contenu de contact*/
+
+
+
 }
