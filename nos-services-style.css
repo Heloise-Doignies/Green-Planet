@@ -1,1 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+
+body {
+    background-color: white;
+  }
+  
+  h1 {
+    color: rgba(20, 15, 15, 0.886);
+    text-align: center;
+
+  }
+  h2 {
+    color:rgba(20, 15, 15, 0.886);
+    text-align: center;
+  }
+  
+  p {
+    font-family:montserrat;
+    font-size: 20px;
+  }
+  .bloc-1 {
+    display: flex;
+  }
+  
+  
