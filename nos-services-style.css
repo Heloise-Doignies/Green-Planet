@@ -18,7 +18,8 @@ body {
     font-family:montserrat;
     font-size: 20px;
   }
-  section {
+  .bloc-1 {
     display: flex;
   }
+  
   
