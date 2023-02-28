@@ -1,35 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
 
 body{
-    background-color: ;
-    
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+}
+  /* code pour quisommesnous_globale*/  
+h1{
+    display: flex;
+    font-family: Anton;
+    text-transform: uppercase;
+    justify-content: center;
 }
 #qui-sommes-nous_soustitre1 {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 50px;
     background-color: #2362b0;
     color: aliceblue;
-    font-family:"Montserrat";
+    font-family:"Tilt Neon";
+ 
 
 
 }
 .quisommesnous_texte_green_plante{
     color: #181818;
     font-family:"Montserrat";
+    padding: 20px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#quisommesnous_blocgauche {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin:50px;
+}
+
+#quisommesnous_blocdroite {
+    width:50%;
 
 }
+
 .quisommesnous_bouton{
     background-color:#FFCA08 ;
     color: black;
     font-family:"Montserrat";
+    font-weight: bold;
+    width: 150px; 
+    height:40px;
+    margin: auto;
     border-radius: 20px;
-
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #qui-sommes-nous_blocgeneral{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
     
 
 
+#quisommesnous_image-ile {
+    border-radius: 20px;
+    width:80%;
 }
 
+#quisommesnous_ile {
+    display: flex;
+    justify-content: center;
+}
+
+/* code pour Notre équipe*/
+
+.quisommesnous_notre-equipe{
+    display: flex;
+    justify-content: space-evenly;
+    font-family:"Tilt Neon";
+    margin-bottom: 30px;
+    
+}
+.quisommesnous_photo_equipe{
+     
+    width: 150px;
+    height:auto;
+    border-radius: 100px;
+
+}
+.quisommesnous_texte_equipe{
+
+     width: 150px;
+     height:auto;
+     font-family:"Montserrat";
+     text-align: center;
+}
+
+/* code pour nos partenaires*/
+.quisommesnous_nospartenaires{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quisommesnous_logo{
+     
+    width: 150px;
+    height:auto;
+
+}
+
+#quisommesnous_titre2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color:#79C2BE;
+    color: black;
+    font-family:"Tilt Neon";
+    
+}
+#quisommesnous_titre3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color:#FFCA08 ;
+    color: black;
+    font-family:"Tilt Neon";
+}
+
+@media (max-width: 375px){
+    #qui-sommes-nous_blocgeneral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .quisommesnous_notre-equipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quisommesnous_blocgauche {
+        width:100%;
+        margin:10px;
+    }
+    
+    #quisommesnous_blocdroite {
+        width:100%;
+    
+}
+
+.quisommesnous_personne {
+    padding:10px;
+}
+
+}     
 
