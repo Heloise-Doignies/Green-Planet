@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Tilt+Neon&display=swap');
+
+body {
+    width: auto;
+    margin: 0;
+    padding:0;
+}
 
 header{
     background-color: #FFCA08;
@@ -20,18 +26,243 @@ header{
     font-weight: bold;
     color:#2362B0;
 }
+/* police de caractère de tous les textes */
 
-ul {
-    list-style-type: none;
+h1, h2{
+    font-family: Anton;
+    font-size: 3em;
+}
+
+h2{
+    font-family: Anton;
+    font-size: 2em;
+}
+
+h3{
+    font-family: Tilt Neon;
+}
+
+p, li, label, input{
+    font-family: Montserrat;
+}
+
+h1, h2, h3, p, button{
+    text-align: center;
+}
+
+.accueil-sensibiliser{
+    font-size: 2em;
+}
+
+
+/* MISE EN FORME DES 3 BLOCS AVEC BOUTONS CLIQUABLES*/
+
+button{
+    background-color: #FFCA08;
+    border-color: #FFCA08;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+}
+
+/* Flex des 3 blocs */
+.accueil-bloc{
     display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-li {
-    padding:10px;
-    align-content: end;
+/* Bloc agenda */
+.accueil-agenda{
+    background-color: #79C2BE;
+    margin: 10px;
+    width: 280px;
+    height: 380px;
+    padding: 10px;
+}
+
+#accueil-img-agenda {
+    height: 150px;
+    width: 200px;
+}
+
+/* Bloc services*/
+.accueil-services {
+    background-color: #2362B0;
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    height: 450px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.accueil-intervention{
+    font-size: 1.5em;
+}
+
+.accueil-boutton-nos-services{
+    height: 50px;
+    width: 170px;
+    font-size: 1.2em;
+}
+
+#accueil-img-graine {
+    height: 200px;
+    width: 150px;
+}
+
+/* Bloc blog */
+.accueil-blog{
+    background-color: #79C2BE;
+    margin: 10px;
+    width: 280px;
+    height: 380px;
+    padding: 5px;
+    align-items: flex-start;
 }
 
 
+/* MISE EN FORME - MISSIONS DE GREEN PLANET*/
+
+   .accueil-greenplanet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    padding: 15px;
+    margin-bottom: 25px;
+   }
+
+#accueil-img-missions {
+    width: 400px;
+    height: 250px;
+    border-radius: 50px;
+}
+
+/* MISE EN FORME - DERNIERS ATELIERS */
+
+.accueil-fondjaune {
+    background-color: #FFCA08;
+    padding: 10px;
+}
+
+.accueil-ateliers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.accueil-ecole{
+    padding: 10px;
+}
+
+.photo{
+    width: 300px;
+    height: 185px;
+    border-radius: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* MISE EN FORME - NEWSLETTER */
+
+.accueil-newsletter{
+    background-color: #79C2BE;
+    margin: 40px 500px 40px 500px;
+    padding-bottom: 20px;
+    border-radius: 60px;
+}
+
+.accueil-infonewsletter, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Newsletter image + texte */
+
+.accueil-imgnewsletter{
+    height: 80px;
+}
+
+.accueil-contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+/* Newsletter Formulaire e-mail+bouton */
+
+#email{background-color: antiquewhite;
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+}
+
+form{
+    justify-content: space-evenly;
+}
+
+input{
+    background-color: #FFCA08;
+    border-style: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 175px;
+    font-weight: bold;
+}
 
 
+/* PARTIE RESPONSIVE */
+@media (max-width: 375px){
 
+/* COLUMN des 3 blocs */
+.accueil-bloc{
+flex-direction: column;}
+
+/* suppression du width sur le carré "Nos Services" */
+.accueil-services {
+    background-color: #2362B0;
+    border-radius: 20px;
+    margin: 10px;
+    height: 450px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+/* COLUMN Missions de Green Planet */
+.accueil-greenplanet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    padding: 15px;
+    margin-bottom: 25px;
+   }
+
+/* COLUMN Nos ateliers */
+.accueil-ateliers{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accueil-newsletter{
+    background-color: #79C2BE;
+    padding-bottom: 20px;
+    border-radius: 60px;
+    margin: 20px 0px 20px 0px;
+}
+.accueil-infonewsletter, form{
+    flex-direction: column;
+}
+}
