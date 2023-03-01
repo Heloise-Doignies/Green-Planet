@@ -340,6 +340,60 @@ footer a:hover {
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
 
 
+
+
+
+@media (min-width:376px) and (max-width:768px) {
+  /*Version tablette*/
+  .bloc-1 {
+    justify-content: center;
+  }
+  
+  .colonne1{
+    width: 90%;
+    border-radius: 50%;
+  }
+  
+  .nos-services-style-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button{  /*agit sur tous les boutons de la page*/
+    width: 170px;
+}
+  
+  .colonne2{
+    width: 100%;
+    margin-top:20px;
+  }
+  
+  .groupe-ados{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+  }
+  .bloc-2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sous-bloc-1{
+    width: 100%;  
+  }
+
+  .sous-bloc-2{
+    width:100%;
+  } /*Fin de la version tablette*/
+
+  .popup{
+    width: 70%;
+  }
+}
+
+
+
 @media (max-width: 375px) {
   /*Code media queries pour le header*/
   nav
@@ -433,50 +487,5 @@ footer a:hover {
     width: 70%;
 
 }
-
-
-@media (min-width:376px) and (max-width:768px) {
-  /*Version tablette*/
-  .bloc-1 {
-    justify-content: center;
-  }
-  
-  .colonne1{
-    width: 90%;
-    border-radius: 50%;
-  }
-  
-  .nos-services-style-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .colonne2{
-    width: 100%;
-    margin-top:20px;
-  }
-  
-  .groupe-ados{
-    width: 90%;
-    height: auto;
-    border-radius: 50px;
-  }
-  .bloc-2{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sous-bloc-1{
-    width: 100%;  
-  }
-
-  .sous-bloc-2{
-    width:100%;
-  } /*Fin de la version tablette*/
-
-  .popup{
-    width: 70%;
-  }
 }
-}
+

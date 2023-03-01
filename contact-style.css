@@ -235,6 +235,8 @@ body {
     background-color: #79C2BE;
     color:white;
     cursor:pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
 }
 
 
@@ -291,6 +293,37 @@ footer a:hover {
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
 
 
+@media (min-width:376px) and (max-width:768px) {
+/*Code media queries pour le contenu de contact*/
+#contact_blocgeneral {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+#contact_gauche {
+    width:100%;
+}
+
+#contact_droite {
+    width: 100%;
+}
+
+#contact_carte {
+    margin-right:0;
+}
+
+#contact_secteurs {
+    margin-right: 0;
+}
+
+#contact_formulaire {
+    margin-left:0;
+}
+
+/*Fin code media queries pour le contenu de contact*/
+
+}
 
 
 @media (max-width: 375px) {

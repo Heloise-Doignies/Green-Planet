@@ -292,6 +292,35 @@ footer a:hover {
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
 
 
+/*Code pour le responsive qui sommes nous tabellet*/
+@media (min-width:376px) and (max-width:768px) {
+    #qui-sommes-nous_blocgeneral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .quisommesnous_notre-equipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quisommesnous_blocgauche {
+        width:100%;
+        margin:10px;
+    }
+    
+    #quisommesnous_blocdroite {
+        width:100%;
+    
+}
+
+.quisommesnous_personne {
+    padding:10px;
+}
+}
+
 @media (max-width: 375px){
     /*Code media queries pour le header*/
     nav
@@ -368,31 +397,3 @@ footer a:hover {
 }
 
 }     
-/*Code pour le responsive qui sommes nous tabellet*/
-@media (min-width:376px) and (max-width:768px) {
-    #qui-sommes-nous_blocgeneral{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-    .quisommesnous_notre-equipe{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #quisommesnous_blocgauche {
-        width:100%;
-        margin:10px;
-    }
-    
-    #quisommesnous_blocdroite {
-        width:100%;
-    
-}
-
-.quisommesnous_personne {
-    padding:10px;
-}
-}

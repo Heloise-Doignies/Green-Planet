@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: auto;
-    max-width: auto;
+    width: 100%;
 }
 
 #header_logo {
@@ -41,9 +41,9 @@ header{
 .header_li {
     padding:10px;
     align-content: end;
-
     font-family: "Montserrat";
     color:#2362B0;
+    text-align: center; 
 }
 
 header a {
@@ -102,7 +102,7 @@ h1, h2, h3, p, button{
 
 button{
     background-color: #FFCA08;
-    border-color: #FFCA08;
+    border-color:#FFCA08;
     border-radius: 50px;
     height: 40px;
     width: 150px;
@@ -238,12 +238,12 @@ a{
 
 .accueil-newsletter{
     background-color: #79C2BE;
-    margin: 30px 350px 30px 350px;
+    width:470px;
+    margin:15px auto 15px auto;
     padding-bottom: 15px;
     padding-top: 10px;
     border-style:double;
     border-radius: 60px;
-
 }
 
 .accueil-infonewsletter, form{
@@ -299,7 +299,7 @@ transition: all 500ms ease;
 /* Boutons cliquables */
 button:hover{
     background-color: #2362B0;
-    border-color: #2362B0;
+    border-color:#2362B0;
     color: white;
     border-radius: 50px;
     height: 40px;
@@ -308,7 +308,7 @@ button:hover{
 
 .zoom:hover{
     background-color: #2362B0;
-    border-color: #2362B0;
+    border-color:#2362B0;
     color: white;
     border-radius: 50px;
     height: 40px;
@@ -374,6 +374,8 @@ footer a:hover {
  .fa-brands:hover {
     color:#79C2BE;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
  }
 
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
@@ -452,7 +454,7 @@ footer a:hover {
         display: none;
         flex-direction: column;
         background-color: #FFCA08;
-        height: 180px;
+        height: auto;
         position: relative;
     }
     
