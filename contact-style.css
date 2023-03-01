@@ -10,8 +10,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    max-width: 1440px;
+    max-width: auto;
+
+    position:fixed; /*pour coller le header en haut */
+    top: 0; left: 0; right: 0;
+    width:100%;
+    height:auto;
 }
 
 #header_logo {
@@ -42,6 +46,7 @@ header{
     align-content: end;
     font-family: "Montserrat";
     color:#2362B0;
+    text-align: center; 
 }
 
 header a {
@@ -90,6 +95,11 @@ body {
     align-items: center;   
 }
 
+.contact_titre2:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+
 #contact_gauche {
     float:left;
     width:50%;
@@ -133,6 +143,7 @@ body {
 #contact_secteurs {
     background-color: none;
     margin-right: 10px;
+    margin-bottom:20px;
     padding:8px;
     text-align:center;
 }
@@ -147,12 +158,19 @@ body {
     text-align: center;
 }
 
+
+
 /* Code pour le bloc formulaire "Nous contacter" */
 .contact_titre3 {
     font-family: "Tilt Neon", Arial;
     text-align: center;
     align-items: center;  
     color:white; 
+}
+
+.contact_titre3:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease;
 }
 
 #contact_formulaire {
@@ -224,6 +242,8 @@ body {
     background-color: #79C2BE;
     color:white;
     cursor:pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
 }
 
 
@@ -254,7 +274,7 @@ footer {
 }
 
 footer a {
-    color:white;
+    color:inherit;
     text-decoration: underline;
 }
 
@@ -273,6 +293,8 @@ footer a:hover {
  .fa-brands:hover {
     color:#79C2BE;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
  }
 
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
@@ -287,12 +309,11 @@ footer a:hover {
         height: 60px;
     }
  
-    nav #header_ul
-    {
-        display: none;
+    nav #header_ul{
+        display:none;
         flex-direction: column;
         background-color: #FFCA08;
-        height: 180px;
+        height: auto;
         position: relative;
     }
  
@@ -359,3 +380,42 @@ footer a:hover {
 
 
 }
+
+
+ /*Code media queries pour les tablettes - Code media queries pour les tablettes*/
+@media (min-width:376px) and (max-width:768px) {
+
+    /*Code media queries pour le contenu de contact*/
+    #contact_blocgeneral {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    #contact_gauche {
+        width:100%;
+    }
+    
+    #contact_droite {
+        width: 100%;
+    }
+
+    #contact_carte {
+        margin-right:0;
+    }
+
+    #contact_secteurs {
+        margin-right: 0;
+    }
+
+    #contact_formulaire {
+        margin-left:0;
+    }
+
+    /*Fin code media queries pour le contenu de contact*/
+
+
+
+}
+
+ /*Fin code media queries pour les tablettes - Fin code media queries pour les tablettes*/
