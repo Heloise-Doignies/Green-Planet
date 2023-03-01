@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: auto;
-    max-width: 1440px;
+    max-width: auto;
 }
 
 #header_logo {
@@ -105,6 +105,7 @@ button{
     border-radius: 50px;
     height: 40px;
     width: 150px;
+    cursor: pointer;
 }
 
 /* Flex des 3 blocs */
@@ -155,6 +156,11 @@ button{
     font-size: 1.2em;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .accueil-boutton-nos-services:hover{
     height: 50px;
     width: 170px;
@@ -193,9 +199,10 @@ button{
    }
 
 #accueil-img-missions {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 220px;
     border-radius: 50px;
+    margin-left: 10px;
 }
 
 /* MISE EN FORME - DERNIERS ATELIERS */
@@ -228,9 +235,12 @@ button{
 
 .accueil-newsletter{
     background-color: #79C2BE;
-    margin: 40px 500px 40px 500px;
-    padding-bottom: 20px;
+    margin: 30px 350px 30px 350px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-style:double;
     border-radius: 60px;
+
 }
 
 .accueil-infonewsletter, form{
@@ -258,6 +268,7 @@ button{
     width: 250px;
     text-align: center;
     font-style: italic;
+    cursor: auto;
 }
 
 form{
@@ -271,6 +282,7 @@ input{
     height: 40px;
     width: 175px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* PARTIE HOVER */
@@ -300,6 +312,18 @@ button:hover{
     width: 165px;
 }
 
+/* PARTIE HOVER */
+/* Ateliers */
+.accueil-ecole:hover, .accueil-college:hover, .accueil-lycee:hover{
+    transform:scale(1.1);
+    transition: all 300ms ease;
+    color:#79C2BE;
+    cursor: pointer;
+}
+
+.accueil-ecole, .accueil-college, .accueil-lycee{
+    transition: all 300ms ease;
+}
 
 /* Code pour le footer - Code pour le footer - Code pour le footer - */
 
@@ -353,7 +377,7 @@ footer a:hover {
 
 
 
-/* PARTIE RESPONSIVE */
+/* PARTIE RESPONSIVE TELEPHONE*/
 @media (max-width: 375px){
 
 /*Code media queries pour le header*/
@@ -444,3 +468,59 @@ flex-direction: column;}
     flex-direction: column;
 }
 }
+
+/* PARTIE RESPONSIVE TABLETTE*/
+@media (max-width: 768px){
+
+    h1{
+        font-family: Fredoka one;
+        font-size: 2em;
+    }
+    
+    h2{
+        font-family: Fredoka one;
+        font-size: 1em;
+    }
+    
+    /* suppression du width sur le carré "Nos Services" */
+    .accueil-services {
+        background-color: #2362B0;
+        border-radius: 20px;
+        margin: 5px;
+        height: 500px;
+        color: white;
+        padding: 10px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+    }
+
+    .accueil-blog{
+        background-color: #79C2BE;
+        margin: 10px;
+        width: 280px;
+        height: 380px;
+        align-items: flex-start;
+        transition: all 500ms ease; 
+    }
+
+    .accueil-texte-blog{
+        font-size: smaller;
+    }
+
+    .photo{
+        width: 180px;
+        height: 110px;
+        border-radius: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+ 
+    .accueil-newsletter{
+        background-color: #79C2BE;
+        padding-bottom: 20px;
+        border-radius: 60px;
+        margin: 20px 100px 20px 100px;
+    }
+   
+    }
