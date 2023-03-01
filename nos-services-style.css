@@ -70,7 +70,7 @@ body {
 
 /* Code pour le contenu de la page, code pour le contenu de la page */
   /* police de caractère général*/
-  h1 { 
+  #nos-services_h1 { 
     font-family: "Fredoka One", cursive;
     color: rgba(20, 15, 15, 0.886);
     text-align: center;
@@ -86,7 +86,7 @@ body {
 
   } 
 
-  button{  /*agit sur tous les boutons de la page*/
+ .nos-services_bouttons{  /*agit sur tous les boutons de la page*/
     background-color: #FFCA08;
     font-weight: bold;
     padding: 6px 10px;
@@ -97,12 +97,12 @@ body {
     width: 200px;
 }
 
-button a{
+.nos-services_bouttons a{
   color:inherit;
   text-decoration: none;
 }
 
-  button:hover { /* changer le texte en blanc et le fond en bleu foncé*/
+.nos-services_bouttons:hover { /* changer le texte en blanc et le fond en bleu foncé*/
     color: white;
     background-color:#2362B0;
     transform: scale(1.1);
@@ -126,14 +126,14 @@ button a{
   transition: all 500ms ease;
  }
 
- .bloc-1 {
+ .nos-services_bloc-1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
 }
 
-.colonne1{
+.nos-services_colonne1{
   width: 50%;
   border-radius: 50%;
 }
@@ -145,14 +145,14 @@ button a{
   justify-content: center;
 }
 
-.colonne2{
+.nos-services_colonne2{
   width: 50%;
   border-radius: 50%;
   display:flex;
   justify-content: center;
 }
 
-.groupe-ados{
+.nos-services_groupe-ados{
   width: 90%;
   height: auto;
   border-radius: 50px;
@@ -175,14 +175,14 @@ button a{
   transition: all 500ms ease;
  }
 
-  .bloc-2{
+  .nos-services_bloc-2{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px;
   }
 
-  .sous-bloc-1{
+  .nos-services_sous-bloc-1{
     width: 50%;
     border-radius: 50%;
     display:flex;
@@ -190,13 +190,13 @@ button a{
     
   }
 
-  .kit-recyclage{
+  .nos-services_kit-recyclage{
     width: 90%;
     height: auto;
     border-radius: 50px;
   }
 
-  .sous-bloc-2{
+  .nos-services_sous-bloc-2{
     width:50%;
     display: flex;
     flex-direction: column;
@@ -215,7 +215,7 @@ button a{
 
 /*Code pour les fenêtres pop-up*/
 
-.popup_overlay { /*Pour le fond, autour de la fenêtre popup*/
+.nos-services_popup_overlay { /*Pour le fond, autour de la fenêtre popup*/
   position: fixed;
   top: 0;
   bottom: 0;
@@ -226,12 +226,12 @@ button a{
   visibility: hidden;
   opacity: 0;
 }
-.popup_overlay:target { /*Pour le contenu visible de la popup*/
+.nos-services_popup_overlay:target { /*Pour le contenu visible de la popup*/
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+.nos-services_popup {
   margin: 70px auto;
   padding: 20px;
   background: white;
@@ -246,13 +246,13 @@ button a{
   align-items: center;
 }
 
-.popup h3 {
+.nos-services_popup h3 {
   margin-top: 0;
   color: black;
   font-family: "Tilt Neon", Arial, sans-serif;
   text-align: center;
 }
-.popup .popup_close {
+.nos-services_popup .nos-services_popup_close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -262,16 +262,16 @@ button a{
   text-decoration: none;
   color:#2362B0;
 }
-.popup .popup_close:hover {
+.nos-services_popup .nos-services_popup_close:hover {
   color: black;
 }
-.popup .nos-services_image-popup {
+.nos-services_popup .nos-services_image-popup {
   overflow: auto;
   border-radius:20px;
   width: 60%;
 }
 
-.popup .nos-services_texte-popup {
+.nos-services_popup .nos-services_texte-popup {
   overflow: auto;
   font-family: "Montserrat", Arial;
   width: 80%;
