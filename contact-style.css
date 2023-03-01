@@ -11,7 +11,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: auto;
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 #header_logo {
@@ -42,6 +42,7 @@ header{
     align-content: end;
     font-family: "Montserrat";
     color:#2362B0;
+    text-align: center;
 }
 
 header a {
@@ -88,6 +89,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+
+.contact_titre2:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease;
 }
 
 #contact_gauche {
@@ -153,6 +159,11 @@ body {
     text-align: center;
     align-items: center;  
     color:white; 
+}
+
+.contact_titre3:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease;
 }
 
 #contact_formulaire {
@@ -273,6 +284,8 @@ footer a:hover {
  .fa-brands:hover {
     color:#79C2BE;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
  }
 
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
@@ -292,7 +305,7 @@ footer a:hover {
         display: none;
         flex-direction: column;
         background-color: #FFCA08;
-        height: 180px;
+        height: auto;
         position: relative;
     }
  
