@@ -11,7 +11,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: auto;
-  max-width: 1440px;
+  max-width: auto;
 }
 
 #header_logo {
@@ -68,120 +68,136 @@ body {
 
 
 /* Code pour le contenu de la page, code pour le contenu de la page */
-  
-  h1 { font-family: "Fredoka One", cursive;
+  /* police de caractère général*/
+  h1 { 
+    font-family: "Fredoka One", cursive;
     color: rgba(20, 15, 15, 0.886);
     text-align: center;
 
   }
-  .kit{background-color: #79C2BE;}
-  h2{ background-color:  #2362B0;
-     color:rgba(20, 15, 15, 0.886);
-    text-align: center;
-  }
-  .groupe-ados{
-    width: 450px;
-    height: 300px;
-    border-radius: 50px;
-    margin-left: 70px;
-  }
-    
-  .p1{
-   
-    font-family:"Montserrat";
-    font-size: 20px;
-    text-align: left;
-  }
-  .bloc-1 {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .bloc-1 h2{
-    width: 100%;
-  }
-  
-  .colonne1{
-    width: 50%;
-    border-radius: 50%;
-    
-  }
-  .colonne1 button{
+  .nos-services-texte{ /*agit sur tous les textes de la page*/
+    font-family:"Montserrat";
+    text-align: left;
+    line-height: 1.6;
+    margin: 10px; 
+
+  } 
+
+  button{  /*agit sur tous les boutons de la page*/
     background-color: #FFCA08;
     font-weight: bold;
     padding: 6px 10px;
     border-radius: 100px;
     border: 0;
     font-size: 16px;
+    height: 40px;
+    width: 200px;
+}
+  button:hover { /* changer le texte en blanc et le fond en bleu foncé*/
+    color: white;
+    background-color:#2362B0;
+    transform: scale(1.1);
+    transition: all 500ms ease;
+    cursor: pointer;
 
-  }
-  .nos-services-style-button{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-  }
+}
 
-  .colonne2{
-    width: 50%;
-    border-radius: 50%;
+  /*Code bloc interventions dans les écoles*/
   
+  .nos-services_interventions {
+    width: auto;
+    color: white;
+    background-color:  #2362B0;
+    text-align: center;
+    font-family: "Tilt Neon", Arial;
+    font-size: 2em;
+    padding: 15px;
+ }
 
-  }
+ .bloc-1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
 
-  .bloc-2 h2{
-    width: 100%;
-    
+.colonne1{
+  width: 50%;
+  border-radius: 50%;
+}
 
-  }
-  .sous-bloc-2{
-    display: flex;
-    flex-direction: column;
-  }
-  .colonne1{
-    width: 50%;
-    border-radius: 50%;
-  }
-  .kit-recyclage{
-    width: 500px;
-    height: 300px;
-    border-radius: 50px;
-  }
-  .colonne2{
-    width: 50%;
-    border-radius: 50%;
-  }
-  .p2{
-    font-family:"Montserrat";
-    font-size: 20px;
+.nos-services-style-button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
 
-  }
+.colonne2{
+  width: 50%;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+}
+
+.groupe-ados{
+  width: 90%;
+  height: auto;
+  border-radius: 50px;
+}
+  /*Fin code bloc interventions dans les écoles*/
+
+
+  /*Code bloc kit sensibilisation*/
+  .nos-services_kit {
+    width: auto;
+    color: black;
+    background-color: #79C2BE;
+    text-align: center;
+    font-family: "Tilt Neon", Arial;
+    font-size: 2em;
+    padding: 15px;
+ }
+
   .bloc-2{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
   }
-  .bouton{
-    background-color:#FFCA08;
-    color: black;
-    font-family:"Montserrat";
+
+  .sous-bloc-1{
+    width: 50%;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    
+  }
+
+  .kit-recyclage{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+  }
+
+  .sous-bloc-2{
+    width:50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-
+    justify-content: center;
+    border-radius: 50%;
+    margin: 20px;
   }
 
-
+  .bouton-commander-un-kit{
+    margin: 20px;
+  }
   
-  /*  { background-color: #4e66d1; 
-    display: flex; 
-    flex-direction: row; 
-    height: 70px; 
-    align-content: center; } /*
-  
+  /*Fin code bloc kit sensibilisation*/
 
 
-
-    /* Code pour le contenu de la page, code pour le contenu de la page */
+    /*Fin code pour le contenu de la page, code pour le contenu de la page */
 
 
     /* Code pour le footer - Code pour le footer - Code pour le footer - */
@@ -247,7 +263,7 @@ footer a:hover {
       display: none;
       flex-direction: column;
       background-color: #FFCA08;
-      height: 180px;
+      height: auto;
       position: relative;
   }
 
@@ -283,5 +299,89 @@ footer a:hover {
   /*Fin code media queries pour le header*/
 
   /*Code media queries pour le contenu de la page*/
+
+  .bloc-1 {
+    justify-content: center;
+  }
+  
+  .colonne1{
+    width: 90%;
+    border-radius: 50%;
+  }
+  
+  .nos-services-style-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+  }
+  
+  .colonne2{
+    width: 100%;
+    margin-top:20px;
+  }
+  
+  .groupe-ados{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+  }
+  .bloc-2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sous-bloc-1{
+    width: 100%;  
+  }
+
+  .sous-bloc-2{
+    width:100%;
+  }
+
+}
+
+
+@media (min-width:376px) and (max-width:768px) {
+  /*Version tablette*/
+  .bloc-1 {
+    justify-content: center;
+  }
+  
+  .colonne1{
+    width: 90%;
+    border-radius: 50%;
+  }
+  
+  .nos-services-style-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .colonne2{
+    width: 100%;
+    margin-top:20px;
+  }
+  
+  .groupe-ados{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+  }
+  .bloc-2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sous-bloc-1{
+    width: 100%;  
+  }
+
+  .sous-bloc-2{
+    width:100%;
+  } /*Fin de la version tablette*/
+
 
 }
