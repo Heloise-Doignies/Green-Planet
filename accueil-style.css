@@ -188,6 +188,10 @@ a{
     transition: all 500ms ease; 
 }
 
+.accueil-texte-blog{
+    padding-bottom: 60px;
+}
+
 
 /* MISE EN FORME - MISSIONS DE GREEN PLANET*/
 
@@ -201,8 +205,16 @@ a{
     margin-bottom: 25px;
    }
 
+.accueil-mission{
+    list-style-type: none;
+    align-items: center;
+}
+
+.accueil-imgliste{
+    height: 25px;
+}
+
 #accueil-img-missions {
-    width: 350px;
     height: 220px;
     border-radius: 0px 50px 0px 50px;
     margin-left: 10px;
@@ -212,7 +224,7 @@ a{
 
 .accueil-fondjaune {
     background-color: #FFCA08;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .accueil-ateliers{
@@ -249,13 +261,14 @@ a{
 .accueil-infonewsletter, form{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 1.1em;
 }
 
 /* Newsletter image + texte */
 
 .accueil-imgnewsletter{
-    height: 80px;
+    height: 75px;
 }
 
 .accueil-contact{
@@ -364,14 +377,14 @@ footer a:hover {
     color:#79C2BE;
  }
 
- .fa-brands {
+ footer .fa-brands {
     width: 30px;
     height:auto;
     color:white;
     padding-right:20px;
  }
 
- .fa-brands:hover {
+ footer .fa-brands:hover {
     color:#79C2BE;
     cursor: pointer;
     transform: scale(1.2);
@@ -395,30 +408,53 @@ footer a:hover {
         font-family: Fredoka one;
         font-size: 1em;
     }
+
+    .accueil-sensibiliser{
+        margin: 10px;
+    }
     
     /* suppression du width sur le carré "Nos Services" */
     .accueil-services {
-        background-color: #2362B0;
-        border-radius: 20px;
         margin: 5px;
         height: 500px;
-        color: white;
         padding: 10px;
         margin-bottom: 25px;
         margin-right: 8px;
     }
 
     .accueil-blog{
-        background-color: #79C2BE;
         margin: 10px;
         width: 280px;
         height: 380px;
         align-items: flex-start;
-        transition: all 500ms ease; 
+        transition: all 500ms ease;
     }
 
     .accueil-texte-blog{
         font-size: smaller;
+    }
+    
+    .accueil-greenplanet {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-size: smaller;
+        margin-left: -25px;
+       }
+
+       #accueil-img-missions {
+        height: 180px;
+        border-radius: 0px 50px 0px 50px;
+        margin-left: 10px;
+    }
+
+    .accueil-titremissions{
+        margin-top: 20px;
+    }
+
+    .accueil-fondjaune {
+        background-color: #FFCA08;
     }
 
     .photo{
@@ -434,7 +470,8 @@ footer a:hover {
         background-color: #79C2BE;
         padding-bottom: 20px;
         border-radius: 60px;
-        margin: 20px 100px 20px 100px;
+        margin: auto;
+        margin-top: 20px;
     }
    
     }
@@ -495,13 +532,14 @@ footer a:hover {
     
     /* suppression du width sur le carré "Nos Services" */
     .accueil-services {
-        background-color: #2362B0;
-        border-radius: 20px;
         margin: 10px;
         height: 450px;
-        color: white;
         padding: 10px;
         margin-bottom: 25px;
+    }
+
+    .accueil-agenda, .accueil-blog{
+        border-radius: 20px;
     }
     
     /* COLUMN Missions de Green Planet */
@@ -512,6 +550,7 @@ footer a:hover {
         font-size: larger;
         padding: 15px;
         margin-bottom: 25px;
+        font-size: smaller;
        }
     
     /* COLUMN Nos ateliers */
