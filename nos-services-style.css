@@ -345,49 +345,49 @@ footer a:hover {
 
 @media (min-width:376px) and (max-width:768px) {
   /*Version tablette*/
-  .bloc-1 {
+  .nos-services_bloc-1 {
     justify-content: center;
   }
   
-  .colonne1{
+  .nos-services_colonne1{
     width: 90%;
     border-radius: 50%;
   }
   
-  .nos-services-style-button{
+  .nos-services_nos-services-style-button{
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  button{  /*agit sur tous les boutons de la page*/
+  .nos-services_bouttons{  /*agit sur tous les boutons de nos services*/
     width: 170px;
 }
   
-  .colonne2{
+  .nos-services_colonne2{
     width: 100%;
     margin-top:20px;
   }
   
-  .groupe-ados{
+  .nos-services_groupe-ados{
     width: 90%;
     height: auto;
     border-radius: 50px;
   }
-  .bloc-2{
+  .nos-services_bloc-2{
     display: flex;
     flex-direction: column;
   }
 
-  .sous-bloc-1{
+  .nos-services_sous-bloc-1{
     width: 100%;  
   }
 
-  .sous-bloc-2{
+  .nos-services_sous-bloc-2{
     width:100%;
   } /*Fin de la version tablette*/
 
-  .popup{
+  .nos-services_popup{
     width: 70%;
   }
 }
@@ -443,11 +443,11 @@ footer a:hover {
 
   /*Code media queries pour le contenu de la page*/
 
-  .bloc-1 {
+  .nos-services_bloc-1 {
     justify-content: center;
   }
   
-  .colonne1{
+  .nos-services_colonne1{
     width: 90%;
     border-radius: 50%;
   }
@@ -460,30 +460,30 @@ footer a:hover {
 
   }
   
-  .colonne2{
+  .nos-services_colonne2{
     width: 100%;
     margin-top:20px;
   }
   
-  .groupe-ados{
+  .nos-services_groupe-ados{
     width: 90%;
     height: auto;
     border-radius: 50px;
   }
-  .bloc-2{
+  .nos-services_bloc-2{
     display: flex;
     flex-direction: column;
   }
 
-  .sous-bloc-1{
+  .nos-services_sous-bloc-1{
     width: 100%;  
   }
 
-  .sous-bloc-2{
+  .nos-services_sous-bloc-2{
     width:100%;
   }
 
-  .popup{
+  .nos-services_popup{
     width: 70%;
 
 }
