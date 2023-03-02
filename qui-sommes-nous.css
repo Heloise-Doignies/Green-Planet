@@ -76,6 +76,7 @@ h1{
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     justify-content: center;
+    font-size:2rem;
 }
 #qui-sommes-nous_soustitre1 {
     display: flex;
@@ -85,12 +86,10 @@ h1{
     background-color: #2362b0;
     color: aliceblue;
     font-family:"Tilt Neon";
+    font-size:1.5rem;
 
 }
-#qui-sommes-nous_soustitre1:hover{
-    transform: scale(1.1);
-    transition: all 500ms ease;
-}
+
 .quisommesnous_texte_green_plante{
     color: #181818;
     font-family:"Montserrat";
@@ -216,13 +215,9 @@ em {
     background-color:#79C2BE;
     color: black;
     font-family:"Tilt Neon";
+    font-size:1.5rem;
     
 }
-#quisommesnous_titre2:hover{
-    transform: scale(1.1);
-    transition: all 500ms ease;
-}
-
 
 #quisommesnous_titre3 {
     display: flex;
@@ -232,12 +227,10 @@ em {
     background-color:#FFCA08 ;
     color: black;
     font-family:"Tilt Neon";
+    font-size:1.5rem;
 }
 
-#quisommesnous_titre3:hover{
-    transform: scale(1.1);
-    transition: all 500ms ease;
-}
+
 
 /* Code pour le footer - Code pour le footer - Code pour le footer - */
 
@@ -275,14 +268,14 @@ footer a:hover {
     color:#79C2BE;
  }
 
- .fa-brands {
+ footer .fa-brands {
     width: 30px;
     height:auto;
     color:white;
     padding-right:20px;
  }
 
- .fa-brands:hover {
+ footer .fa-brands:hover {
     color:#79C2BE;
     cursor: pointer;
     transform: scale(1.2); 
