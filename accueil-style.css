@@ -72,21 +72,21 @@ body {
 /* police de caractère de tous les textes */
 
 h1{
-    font-family: Fredoka one;
+    font-family: "Fredoka One";
     font-size: 3em;
 }
 
 h2{
-    font-family: Fredoka one;
+    font-family: "Fredoka One";
     font-size: 2em;
 }
 
 h3{
-    font-family: Tilt Neon;
+    font-family: "Tilt Neon";
 }
 
 p, li, label, input{
-    font-family: Montserrat;
+    font-family: "Montserrat";
 }
 
 h1, h2, h3, p, button{
@@ -544,6 +544,7 @@ footer a:hover {
         margin: auto;
         margin-top: 20px;
     }
+
    
     }
 
@@ -601,18 +602,21 @@ footer a:hover {
     /* COLUMN des 3 blocs */
     .accueil-bloc{
         flex-direction: column;
+        justify-content: center;
+        max-width:100%;
     }
     
     /* suppression du width sur le carré "Nos Services" */
     .accueil-services {
         margin: 10px;
         height: auto;
-        width: 100%;
+        width: 80%;
         padding: 10px;
         margin-bottom: 25px;
     }
     .accueil-agenda, .accueil-blog{
         border-radius: 20px;
+        width: 70%;
     }
    
     /* COLUMN Missions de Green Planet */
@@ -620,14 +624,17 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: larger;
         padding: 15px;
         margin-bottom: 25px;
-        font-size: smaller;
+        font-size: 1rem;
        }
 
     .accueil-titremissions{
         margin-top: 30px;
+        }
+
+    #accueil-img-missions {
+        width: 90%;
         }
     
     /* COLUMN Nos ateliers */
@@ -636,6 +643,11 @@ footer a:hover {
         align-items: center;
         justify-content: center;
     }
+
+    .accueil-fondjaune {
+        width:100%;
+    }
+
     
     /* NEWSLETTER */
     
@@ -651,5 +663,6 @@ footer a:hover {
     .accueil-infonewsletter, form{
         flex-direction: column;
     }
+
 
     }
