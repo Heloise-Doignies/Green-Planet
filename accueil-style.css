@@ -208,6 +208,7 @@ a{
 .accueil-mission{
     list-style-type: none;
     align-items: center;
+    line-height: 1.8;
 }
 
 .accueil-imgliste{
@@ -225,6 +226,7 @@ a{
 .accueil-fondjaune {
     background-color: #FFCA08;
     padding-top: 10px;
+    width: auto;
 }
 
 .accueil-ateliers{
@@ -239,7 +241,7 @@ a{
 }
 
 .photo{
-    width: 300px;
+    max-width: 300px;
     height: 185px;
     border-radius: 50px;
     margin-left: 25px;
@@ -341,6 +343,75 @@ button:hover{
     transition: all 300ms ease;
 }
 
+/*Code pour les fenêtres pop-up*/
+
+.accueil_popup_overlay { /*Pour le fond, autour de la fenêtre popup*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .accueil_popup_overlay:target { /*Pour le contenu visible de la popup*/
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .accueil_popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: white;
+    border:solid 20px #79C2BE;
+    border-radius: 20px;
+    width: 70%;
+    position: relative;
+    transition: all 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accueil_popup h3 {
+    margin-top: 0;
+    color: black;
+    font-family: "Tilt Neon", Arial, sans-serif;
+    text-align: center;
+  }
+  .accueil_popup .accueil_popup_close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#2362B0;
+  }
+  .accueil_popup .accueil_popup_close:hover {
+    color: black;
+  }
+  
+  .accueil_popup .accueil_image-popup {
+    overflow: auto;
+    border-radius:20px;
+    width: 60%;
+  }
+  
+  .accueil_popup .accueil_texte-popup {
+    overflow: auto;
+    font-family: "Montserrat", Arial;
+    width: 80%;
+  }
+  
+  
+  /*Fin code pour les fenêtres pop-up*/
+
+
 /* Code pour le footer - Code pour le footer - Code pour le footer - */
 
 #footer_blocblanc {
@@ -396,7 +467,7 @@ footer a:hover {
 
 
 /* PARTIE RESPONSIVE TABLETTE*/
-@media (max-width: 768px){
+@media (min-width:376px) and (max-width:768px){
 
 
     h1{
@@ -484,6 +555,7 @@ footer a:hover {
     nav
     {
         height: 60px;
+        width: auto;
     }
     
     nav #header_ul
@@ -528,20 +600,21 @@ footer a:hover {
     
     /* COLUMN des 3 blocs */
     .accueil-bloc{
-    flex-direction: column;}
+        flex-direction: column;
+    }
     
     /* suppression du width sur le carré "Nos Services" */
     .accueil-services {
         margin: 10px;
-        height: 450px;
+        height: auto;
+        width: 100%;
         padding: 10px;
         margin-bottom: 25px;
     }
-
     .accueil-agenda, .accueil-blog{
         border-radius: 20px;
     }
-    
+   
     /* COLUMN Missions de Green Planet */
     .accueil-greenplanet {
         flex-direction: column;
@@ -552,10 +625,13 @@ footer a:hover {
         margin-bottom: 25px;
         font-size: smaller;
        }
+
+    .accueil-titremissions{
+        margin-top: 30px;
+        }
     
     /* COLUMN Nos ateliers */
     .accueil-ateliers{
-        
         flex-direction: column;
         align-items: center;
         justify-content: center;

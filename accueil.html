@@ -52,8 +52,7 @@
 <div class="accueil-blog">
     <h3>Blog</h3>
     <img>
-    <p class="accueil-texte-blog">What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ...</p>
+    <p class="accueil-texte-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis ducimus at fuga quidem recusandae voluptatibus fugiat reprehenderit! Minus error ratione totam? Blanditiis vitae officia maiores dignissimos quidem, saepe animi.</p>
     <button>Voir plus</button>
 </div>
 </section>
@@ -67,7 +66,7 @@
         <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Rendre le recyclage accessible dès le plus jeune age</li>
         <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Animer des ateliers ludiques autour du "Do it Yourself"</li>
         <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Organiser des sorties pour découvrir la faune et la flore</li>
-        <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Proposer des Green kits pour les foyers</li>
+        <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Proposer des Green kits pour les classes et les foyers</li>
         <li><img class="accueil-imgliste" src="/images-accueil/economiser-lenergie.png" alt="main pousse"> Organiser des clean walks avec les établissements scolaires</li>
     </ul>
     <img id="accueil-img-missions" src="/images-accueil/mission green planet.JPG" alt="enfants qui recyclent">
@@ -80,19 +79,53 @@
     <h2>NOS DERNIERS ATELIERS</h2>
 
     <section class="accueil-ateliers">
-    <div class="accueil-ecole">
+        <a class="accueil-bouton" href="#accueil_popup1"><div class="accueil-ecole">
         <p>A la découverte de la flore locale<br>Ecole Dorléac</p>
             <img class="photo" src="/images-accueil/flore.JPG" alt="enfants qui découvrent la flore">
-    </div>
+    </div></a>
+                    <!--Fenetre pop-up pour interventions en maternelle-->
+                    <div id="accueil_popup1" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les écoles maternelles</h3>
+                            <img class="accueil_image-popup" src="images-accueil/flore.JPG" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en maternelle-->    
     
     <div class="accueil-college">
-        <p>Atelier recyclerie<br>Collège Clémenceau</p>
+        <a class="accueil-bouton" href="#accueil_popup2"><p>Atelier recyclerie<br>Collège Clémenceau</p>
             <img class="photo" src="/images-accueil/recyclerie.JPG" alt="collegiens qui nettoyent la nature">
-    </div>
+    </div></a>
+
+                    <!--Fenetre pop-up pour interventions en collège-->
+                    <div id="accueil_popup2" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les collèges</h3>
+                            <img class="accueil_image-popup" src="images-accueil/recyclerie.JPG" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en collège-->    
+
     <div class="accueil-lycee">
-        <p>Clean walk au parc de Vincennes<br>Lycée Jules Ferry </p>
+        <a class="accueil-bouton" href="#accueil_popup3"><p>Clean walk au parc de Vincennes<br>Lycée Jules Ferry </p>
         <img class="photo" src="/images-accueil/groupe ados.png" alt="lycéens qui font un atelier diy">
-    </div>
+    </div></a>
+
+                    <!--Fenetre pop-up pour interventions en lycée-->
+                    <div id="accueil_popup3" class="accueil_popup_overlay">
+                        <div class="accueil_popup">
+                            <a class="accueil_popup_close" href="#">&times;</a>
+                            <h3 class="accueil_titre-popup">Interventions dans les collèges</h3>
+                            <img class="accueil_image-popup" src="images-accueil/groupe ados.png" alt="image enfants">
+                            <p class="accueil_texte-popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit delectus, consequatur est saepe explicabo id optio repudiandae nam, magni tempora quaerat nesciunt repellendus iure. Dignissimos minima quaerat soluta voluptates! Corrupti!</p>
+                        </div>
+                    </div>
+                    <!--Fin de fenetre pop-up pour interventions en lycée-->   
+
 </section>
 </div>
 
@@ -105,7 +138,7 @@
     </div>
         <form class="accueil-form">
             <label for="email"><input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail"/></label>
-            <input class="zoom" type="submit" value="S'inscrire à la Newletter"/>
+            <input class="zoom" type="submit" value="S'inscrire à la Newsletter"/>
         </form>
 </section>
 

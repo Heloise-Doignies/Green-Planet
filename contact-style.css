@@ -344,6 +344,7 @@ footer a:hover {
     nav
     {
         height: 60px;
+        width: auto;
     }
  
     nav #header_ul

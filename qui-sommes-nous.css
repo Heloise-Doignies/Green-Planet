@@ -76,7 +76,9 @@ h1{
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     justify-content: center;
+    text-align: center;
     font-size:2rem;
+    padding:0 10px 0 10px;
 }
 #qui-sommes-nous_soustitre1 {
     display: flex;
@@ -319,6 +321,7 @@ footer a:hover {
     nav
     {
         height: 60px;
+        width: auto;
     }
  
     nav #header_ul
