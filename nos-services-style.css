@@ -393,6 +393,7 @@ footer .fa-brands:hover {
   nav
   {
       height: 60px;
+      width: auto;
   }
 
   nav #header_ul
