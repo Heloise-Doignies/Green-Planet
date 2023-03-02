@@ -73,6 +73,7 @@ body {
   #nos-services_h1 { 
     font-family: "Fredoka One", cursive;
     color: rgba(20, 15, 15, 0.886);
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
 
@@ -117,13 +118,9 @@ body {
     color: white;
     background-color:  #2362B0;
     text-align: center;
-    font-family: "Tilt Neon", Arial;
+    font-family: "Tilt Neon", Arial; 
+    font-size: 1.5rem;
     padding: 15px;
- }
-
- .nos-services_interventions:hover {
-  transform: scale(1.2);
-  transition: all 500ms ease;
  }
 
  .nos-services_bloc-1 {
@@ -167,12 +164,8 @@ body {
     background-color: #79C2BE;
     text-align: center;
     font-family: "Tilt Neon", Arial;
+    font-size: 1.5rem;
     padding: 15px;
- }
-
- .nos-services_kit:hover{
-  transform: scale(1.2);
-  transition: all 500ms ease;
  }
 
   .nos-services_bloc-2{
@@ -207,7 +200,8 @@ body {
   }
 
   .bouton-commander-un-kit{
-    margin: 20px;
+    margin: 30px;
+    height: auto;
   }
   
   /*Fin code bloc kit sensibilisation*/
@@ -323,14 +317,14 @@ footer a:hover {
   color:#79C2BE;
 }
 
-.fa-brands {
+footer .fa-brands {
   width: 30px;
   height:auto;
   color:white;
   padding-right:20px;
 }
 
-.fa-brands:hover {
+footer .fa-brands:hover {
   color:#79C2BE;
   cursor: pointer;
   transform: scale(1.2); 
