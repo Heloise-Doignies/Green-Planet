@@ -70,67 +70,83 @@ body {
 
 /* police de caractère de tous les textes */
 
-h1{
-    font-family: Fredoka one;
-    font-size: 3em;
+#recyclage h1{
+    font-family: "Fredoka one";
+    font-size: 2.5em;
 }
 
-h2{
-    font-family: Fredoka one;
+#recyclage h2{
+    font-family: "Fredoka one";
     font-size: 2em;
 }
 
-h3{
-    font-family: Tilt Neon;
+#recyclage p{
+    font-family: "Montserrat";
+    font-size: 1.5em;
 }
 
-p{
-    font-family: Montserrat;
-    font-size: 2em;
-}
-
-h1, h2, h3, p, button{
+#recyclage h1, h2, h3, p, button{
     text-align: center;
+}
+
+#recyclage a {
+    color:inherit;
+    text-decoration: none;
 }
 
 
 .recyclage-visus{
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
+    justify-content: center;
    }
+
+.giphy-embed {
+    width:90%;
+}
+
+.recyclage-triselectif {
+    width:90%;
+}
 
 .recyclage-citeo{
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    justify-content: center;
  }
 
 
-   button{
+#recyclage button{
     background-color: #FFCA08;
     border-color:#FFCA08;
     border-radius: 50px;
     height: 40px;
     width: 150px;
-    font-family: montserrat;
+    font-family: "Montserrat";
     font-size: medium;
     font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+
+#recyclage button:hover {
+    cursor:pointer;
+    background-color: #2362B0;
+    border-color: #2362B0;
+    color:white;
 }
 
 .recyclage-logo{
     height: 90px;
-    padding: 20px;
 }
 
 .recyclage-logos{
     display: flex;
  align-items: center;
- align-content: center;
- justify-content: center;
+ justify-content: space-around;
 }
 
 
@@ -139,7 +155,7 @@ h1, h2, h3, p, button{
 
 #footer_blocblanc {
     background-color: white;
-    height: 150px;
+    height: 80px;
 }
 
 footer {
@@ -187,6 +203,17 @@ footer a:hover {
 
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
 
+
+
+
+/* PARTIE RESPONSIVE TABLETTE
+@media (min-width:376px) and (max-width:768px){
+
+
+}*/
+
+
+    /* PARTIE RESPONSIVE TELEPHONE*/
 @media (max-width: 375px){
 
     /*Code media queries pour le header*/
@@ -194,7 +221,7 @@ footer a:hover {
     nav
     {
         height: 60px;
-        width:100%;
+        width:auto;
     }
     
     nav #header_ul
@@ -240,14 +267,14 @@ footer a:hover {
         margin: 0;
     }
 
-    h1{
+    #recyclage h1{
         font-size: 2em;
     }
 
-    h2{
+    #recyclage h2{
         font-size: 1.7em;
     }
-    p{
+    #recyclage p{
         font-size: medium;
     }
 
@@ -258,33 +285,18 @@ footer a:hover {
     align-items: center;
    }
 
-   button{
+   #recyclage button{
     height: 40px;
     width: 110px;
     border-radius: 30px;
-    background-color: #FFCA08;
-    font-family: montserrat;
-    font-size: medium;
     font-weight: bold;
    }
 
-   .recyclage-triselectif{
-    width:100%;
-   }
-
-   .recyclage-citeo{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-   }
-
-
-
    .recyclage-logo{
-    height: 60px;
-    padding: 20px;
+    height: 50px;
 }
+
+
 
 
 }
