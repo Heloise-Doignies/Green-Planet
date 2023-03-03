@@ -12,6 +12,7 @@ Aujourd'hui, on sensibilise et on parle beaucoup des enjeux environnementaux. Ma
 Nous avons imaginé Green Planet, une entreprise qui intervient dans les établissements scolaires (maternelle, primaire, collège, lycée) pour sensibiliser aux enjeux écologiques de manière ludique. Pour aller plus loin, Green Planet propose aussi des Green kits pour la maison et les classes. 
 Le site web développé en HTML et CSS est le site vitrine de Green Planet. 
 Il a pour objectif de présenter Green Planet (ses missions, ses services) et de donner l'occasion aux professeurs et responsabless d'établissement de contacter l'équipe pour demander une intervention auprès des élèves. 
+Ce site pour une entreprise fictive imagine aussi l'équipe qui compose Green Planet ainsi que des partenaires identifiés. 
 
 
 ///Convention de nommage 
