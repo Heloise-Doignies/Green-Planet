@@ -230,13 +230,26 @@ a{
     background-color: #FFCA08;
     padding-top: 10px;
     width: auto;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .accueil-ateliers{
     display: flex;
     flex-direction: row;
+    align-content: center;
     align-items: center;
     justify-content: center;
+    width:95%;
+}
+
+.accueil-ecole, .accueil-college, .accueil-lycee {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo{
