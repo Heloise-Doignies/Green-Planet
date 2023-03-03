@@ -236,10 +236,10 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.accueil-ecole{
+.accueil-ecole, .accueil-college, .accueil-lycee{
     padding: 10px;
 }
 
@@ -611,12 +611,12 @@ footer a:hover {
     .accueil-services {
         margin: 10px;
         height: auto;
-        padding: 10px;
+        padding: 0px;
         margin-bottom: 25px;
     }
 
     .accueil-texte-agenda{
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
     
     .accueil-agenda, .accueil-blog{
@@ -654,6 +654,11 @@ footer a:hover {
 
     .accueil-fondjaune {
         width:100%;
+        padding-bottom:10px;
+    }
+
+    .accueil-ecole, .accueil-college, .accueil-lycee{
+        padding: 0px;
     }
 
     
