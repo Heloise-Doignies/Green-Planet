@@ -263,6 +263,7 @@ body {
   overflow: auto;
   border-radius:20px;
   width: 60%;
+  height:auto;
 }
 
 .nos-services_popup .nos-services_texte-popup {
@@ -480,7 +481,6 @@ footer .fa-brands:hover {
 
   .nos-services_popup{
     width: 70%;
-
-}
+  }
 }
 

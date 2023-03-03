@@ -412,6 +412,7 @@ transition: all 500ms ease;
     overflow: auto;
     border-radius:20px;
     width: 60%;
+    height:auto;
   }
   
   .accueil_popup .accueil_texte-popup {
