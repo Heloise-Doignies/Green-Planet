@@ -107,7 +107,7 @@ body {
 }
 
 .recyclage-triselectif {
-    width:90%;
+    width:500px;
 }
 
 .recyclage-citeo{
@@ -284,6 +284,10 @@ footer a:hover {
     align-content: center;
     align-items: center;
    }
+
+   .recyclage-triselectif {
+    width:90%;
+}
 
    #recyclage button{
     height: 40px;
