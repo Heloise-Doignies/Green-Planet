@@ -207,8 +207,11 @@ a{
 
 .accueil-mission{
     list-style-type: none;
-    align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
     line-height: 1.8;
+    padding-left:10px;
 }
 
 .accueil-imgliste{
@@ -241,11 +244,10 @@ a{
 }
 
 .photo{
-    max-width: 300px;
+    width: 300px;
     height: 185px;
     border-radius: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+
 }
 
 /* MISE EN FORME - NEWSLETTER */
@@ -289,18 +291,22 @@ a{
     cursor: auto;
 }
 
-form{
+.accueil-bloc form{
     justify-content: space-evenly;
 }
 
-input{
+.accueil-newsletter input{
     background-color: #FFCA08;
     border-style: none;
     border-radius: 50px;
     height: 40px;
-    width: 175px;
+    width: 170px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.accueil-newsletter input:hover {
+    width:190px;
 }
 
 /* PARTIE HOVER */
@@ -312,13 +318,11 @@ transition: all 500ms ease;
 
 /* PARTIE HOVER */
 /* Boutons cliquables */
-button:hover{
+.accueil-bloc button:hover{
     background-color: #2362B0;
     border-color:#2362B0;
     color: white;
-    border-radius: 50px;
-    height: 40px;
-    width: 150px;
+
 }
 
 .zoom:hover{
@@ -327,7 +331,7 @@ button:hover{
     color: white;
     border-radius: 50px;
     height: 40px;
-    width: 165px;
+    width: 175px;
 }
 
 /* PARTIE HOVER */
@@ -532,8 +536,6 @@ footer a:hover {
         width: 180px;
         height: 110px;
         border-radius: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
     }
     
  
@@ -603,38 +605,44 @@ footer a:hover {
     .accueil-bloc{
         flex-direction: column;
         justify-content: center;
-        max-width:100%;
     }
     
     /* suppression du width sur le carré "Nos Services" */
     .accueil-services {
         margin: 10px;
         height: auto;
-        width: 80%;
         padding: 10px;
         margin-bottom: 25px;
     }
+
+    .accueil-texte-agenda{
+        padding-bottom: 10px;
+    }
+    
     .accueil-agenda, .accueil-blog{
         border-radius: 20px;
-        width: 70%;
     }
+
+    
    
     /* COLUMN Missions de Green Planet */
     .accueil-greenplanet {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px;
         margin-bottom: 25px;
         font-size: 1rem;
        }
 
     .accueil-titremissions{
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom:0px;
         }
 
     #accueil-img-missions {
         width: 90%;
+        height: auto;
         }
     
     /* COLUMN Nos ateliers */
