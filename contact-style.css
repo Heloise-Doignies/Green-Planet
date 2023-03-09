@@ -305,7 +305,7 @@ footer a:hover {
 /* Fin code pour le footer - Fin code pour le footer - Fin code pour le footer - */
 
 
-@media (min-width:376px) and (max-width:768px) {
+@media (min-width:551px) and (max-width:768px) {
 /*Code media queries pour le contenu de contact*/
 #contact_blocgeneral {
     display: flex;
@@ -339,7 +339,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
     /*Code media queries pour le header*/
     nav
     {

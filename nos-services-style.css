@@ -338,7 +338,7 @@ footer .fa-brands:hover {
 
 
 
-@media (min-width:376px) and (max-width:768px) {
+@media (min-width:551px) and (max-width:768px) {
   /*Version tablette*/
   .nos-services_bloc-1 {
     justify-content: center;
@@ -389,7 +389,7 @@ footer .fa-brands:hover {
 
 
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   /*Code media queries pour le header*/
   nav
   {

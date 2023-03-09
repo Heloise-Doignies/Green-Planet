@@ -479,7 +479,7 @@ footer a:hover {
 
 
 /* PARTIE RESPONSIVE TABLETTE*/
-@media (min-width:376px) and (max-width:768px){
+@media (min-width:551px) and (max-width:768px){
 
 
     h1{
@@ -559,7 +559,7 @@ footer a:hover {
     }
 
     /* PARTIE RESPONSIVE TELEPHONE*/
-@media (max-width: 375px){
+@media (max-width: 550px){
 
     /*Code media queries pour le header*/
      
